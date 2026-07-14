@@ -69,6 +69,7 @@ input, textarea {
     --color-info-300: #3087DB;
 }
 
+
 /* Radius */
 
 :root {
@@ -172,6 +173,7 @@ input, textarea {
     line-height: 1.5;
 }
 
+
 /* container */
 
 .container {
@@ -181,10 +183,12 @@ input, textarea {
 }
 
 
+/* Grid System */
+
 .grid {
     display: grid;
     grid-template-columns: repeat(12, minmax(0, 1fr));
-    gap: 24px;
+    column-gap: 24px;
 }
 
 
@@ -192,6 +196,8 @@ input, textarea {
 
 .col-center-10 { grid-column: 2 / span 10; }
 
+
+/* Utility */
 
 .mb-4 {
     margin-bottom: 4px;
