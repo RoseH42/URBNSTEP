@@ -234,7 +234,7 @@ input, textarea {
 }
 
 .mb-24 {
-    margin-bottom: var(--spacing-l)x;
+    margin-bottom: var(--spacing-l);
 }
 
 .mb-48 {
