@@ -1,5 +1,9 @@
 
+/* 第三方資源 */
+
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
 
 *, *::before, *::after {
     box-sizing: border-box;
@@ -29,6 +33,13 @@ textarea {
 input, textarea {
     font: inherit;
     color: inherit;
+}
+
+button {
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    border: none;
 }
 
 
@@ -213,6 +224,11 @@ input, textarea {
     column-gap: 24px;
 }
 
+.col-2 { grid-column: span 2; }
+
+.col-10 { grid-column: span 10; }
+
+.col-12 { grid-column: span 12; }
 
 .col-center-8 { grid-column: 3 / span 8; }
 
@@ -226,7 +242,7 @@ input, textarea {
 }
 
 .mb-12 {
-    margin-bottom: var(--spacing-xs);
+    margin-bottom: var(--spacing-s);
 }
 
 .mb-16 {
@@ -246,8 +262,28 @@ input, textarea {
     padding-bottom: var(--spacing-xs);
 }
 
+.py-12{
+    padding-top: var(--spacing-s);
+    padding-bottom: var(--spacing-s);
+}
+
+.py-16{
+    padding-top: var(--spacing-m);
+    padding-bottom: var(--spacing-m);
+}
+
+.py-32{
+    padding-top: var(--spacing-xl);
+    padding-bottom: var(--spacing-xl);
+}
+
+
 .pl-12 {
     padding-left: var(--spacing-s);
+}
+
+.pl-24 {
+    padding-right: var(--spacing-l);
 }
 
 .pb-3 {
@@ -258,8 +294,45 @@ input, textarea {
     gap: var(--spacing-xs);
 }
 
+.gap-16 {
+    gap: var(--spacing-m);
+}
+
+.gap-40 {
+    gap: var(--spacing-2xl);
+}
+
+.gap-48 {
+    gap: var(--spacing-3xl);
+}
+
+
+.ml-auto {
+    margin-left: auto;
+}
+
+.d-block {
+    display: block;
+}
+
 .d-flex {
     display: flex;
+}
+
+.f-wrap {
+    flex-wrap: wrap;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.align-items-center {
+    align-items: center;
 }
 
 .divider {

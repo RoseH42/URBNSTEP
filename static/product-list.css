@@ -1,0 +1,50 @@
+
+.nav-item a:hover {
+    color: var(--text-secondary);
+}
+
+.member-btn {
+    width: 48px;
+    height: 48px;
+}
+
+.member-btn:hover {
+    color: var(--text-highlight);
+}
+
+.breadcrumb a {
+    color: var(--text-secondary);
+}
+
+.breadcrumb a:hover {
+    color: var(--text-highlight);
+}
+
+.breadcrumb li:not(:first-child)::before {
+    content: "/";
+    padding-left: 12px;
+    padding-right: 12px;
+    color: var(--color-neutral-300);
+    font-weight: 700;
+}
+
+.product-menu-item a {
+    display: block;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.product-menu-item.active {
+    color: var(--text-highlight);
+}
+
+.product-menu-item a:hover {
+    color: var(--text-highlight);
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 24px;
+    row-gap: 48px;
+}
