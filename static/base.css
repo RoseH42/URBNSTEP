@@ -24,6 +24,7 @@ img {
 a {
     color: inherit;
     text-decoration: none;
+    transition: .6s;
 }
 
 textarea {
@@ -40,6 +41,7 @@ button {
     color: inherit;
     background-color: transparent;
     border: none;
+    padding: 0;
 }
 
 
@@ -226,6 +228,10 @@ button {
 
 .col-2 { grid-column: span 2; }
 
+.col-5 { grid-column: span 5; }
+
+.col-7 { grid-column: span 7; }
+
 .col-10 { grid-column: span 10; }
 
 .col-12 { grid-column: span 12; }
@@ -237,8 +243,20 @@ button {
 
 /* Utility */
 
+.mr-8 {
+    margin-right: var(--spacing-xs);
+}
+
+.mr-24 {
+    margin-right: var(--spacing-l)
+}
+
 .mb-4 {
     margin-bottom: var(--spacing-xxs);
+}
+
+.mb-8 {
+    margin-bottom: var(--spacing-xs);
 }
 
 .mb-12 {
@@ -253,36 +271,62 @@ button {
     margin-bottom: var(--spacing-l);
 }
 
+.mb-32 {
+    margin-bottom: var(--spacing-xl);
+}
+
 .mb-48 {
     margin-bottom: var(--spacing-3xl);
 }
 
-.py-8{
+.mt-40 {
+    margin-top: var(--spacing-2xl);
+}
+
+.mt-48 {
+    margin-top: var(--spacing-3xl);
+}
+
+.py-8 {
     padding-top: var(--spacing-xs);
     padding-bottom: var(--spacing-xs);
 }
 
-.py-12{
+.py-12 {
     padding-top: var(--spacing-s);
     padding-bottom: var(--spacing-s);
 }
 
-.py-16{
+.py-16 {
     padding-top: var(--spacing-m);
     padding-bottom: var(--spacing-m);
 }
 
-.py-32{
+.py-24 {
+    padding-top: var(--spacing-l);
+    padding-bottom: var(--spacing-l);
+}
+
+.py-32 {
     padding-top: var(--spacing-xl);
     padding-bottom: var(--spacing-xl);
 }
 
+.py-48 {
+    padding-top: var(--spacing-3xl);
+    padding-bottom: var(--spacing-3xl);
+}
+
+.py-64 {
+    padding-top: var(--spacing-5xl);
+    padding-bottom: var(--spacing-5xl);
+}
 
 .pl-12 {
     padding-left: var(--spacing-s);
 }
 
-.pl-24 {
+.pr-24 {
     padding-right: var(--spacing-l);
 }
 
@@ -290,8 +334,24 @@ button {
     padding-bottom: 3px;
 }
 
+.pt-32 {
+    padding-top: var(--spacing-xl);
+}
+
+.pt-40 {
+    padding-top: var(--spacing-2xl);
+}
+
+.pt-48 {
+    padding-top: var(--spacing-3xl);
+}
+
 .gap-8 {
     gap: var(--spacing-xs);
+}
+
+.gap-12 {
+    gap: var(--spacing-s);
 }
 
 .gap-16 {
@@ -337,4 +397,76 @@ button {
 
 .divider {
     border-bottom: 1px solid var(--color-neutral-300);
+}
+
+.text-secondary {
+    color: var(--color-neutral-600);
+}
+
+.text-danger-300 {
+    color: var(--color-functional-danger-300);
+}
+
+.bg-neutral-100 {
+    background: var(--color-neutral-100);
+}
+
+.bg-primary-200 {
+    background: var(--color-primary-200);
+}
+
+
+.nav-item a:hover {
+    color: var(--text-secondary);
+}
+
+.member-btn {
+    font-size: 18px;
+    width: 48px;
+    height: 48px;
+    cursor:pointer;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.member-btn:hover {
+    transition: .6s;
+    color: var(--text-highlight);
+}
+
+.btn {
+    font-weight: 500;
+    border-radius: var(--radius-sm);
+    padding: 12px 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+.btn-dark {
+    color: var(--text-on-dark);
+    background: var(--color-neutral-900);
+}
+
+.btn-dark:hover {
+    transition: .6s;
+    background: var(--color-neutral-700);
+}
+
+.btn-light {
+    color: var(--text-primary);
+    border: 1px solid var(--color-neutral-900);
+}
+
+.copyright {
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--color-neutral-600);
+    border-top: 1px solid var(--color-neutral-300);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }

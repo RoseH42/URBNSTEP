@@ -73,6 +73,5 @@
 }
 
 .copyright {
-    color: var(--color-neutral-600);
-    text-align: center;
+    border: none;
 }

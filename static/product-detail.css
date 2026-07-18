@@ -1,0 +1,102 @@
+
+.product-image {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+}
+
+.breadcrumb a {
+    color: var(--text-secondary);
+}
+
+.breadcrumb a:hover {
+    color: var(--text-highlight);
+}
+
+.breadcrumb li:not(:first-child)::before {
+    display: inline-block;
+    content: "/";
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+    color: var(--color-neutral-300);
+    font-weight: 700;
+}
+
+.sale-price {
+    color: var(--text-highlight);
+}
+
+.original-price {
+    color: var(--text-muted);
+    text-decoration: line-through;
+}
+
+/* button 效果 */
+
+.color-option {
+    width: 64px;
+}
+
+.color-option:hover:not(:disabled):not(.is-selected) img {
+    opacity: 0.8;
+    transition: .3s;
+}
+
+.color-option:disabled {
+    opacity: 0.4;
+}
+
+.color-option.is-selected img {
+    border: 1px solid var(--color-neutral-900);
+}
+
+.color-option.is-selected {
+    color: var(--color-neutral-900);
+}
+
+.size-option {
+    width: 160px;
+    border: 1px solid var(--color-neutral-300);
+    border-radius: var(--radius-sm);
+    letter-spacing: 0.07rem;
+}
+
+.size-option:hover:not(:disabled):not(.is-selected) {
+    border-color: var(--color-neutral-600);
+    transition: .3s ease-out;
+}
+
+.size-option:disabled {
+    opacity: 0.4;
+    cursor: default;
+}
+
+.size-option.is-selected {
+    border-color: var(--color-neutral-900);
+}
+
+.favorite-btn {
+    width: 50%;
+}
+
+.favorite-btn:hover {
+    color: var(--text-on-dark);
+    background: var(--color-neutral-900);
+    transition: .3s;    
+}
+
+.book-btn {
+    width: 50%;
+}
+
+
+.recommended-product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 24px;
+}
+
+.recommended-product-card a:hover {
+    opacity: 0.7;
+    transition: .6s;
+}

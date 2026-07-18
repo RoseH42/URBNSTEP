@@ -1,17 +1,4 @@
 
-.nav-item a:hover {
-    color: var(--text-secondary);
-}
-
-.member-btn {
-    width: 48px;
-    height: 48px;
-}
-
-.member-btn:hover {
-    color: var(--text-highlight);
-}
-
 .breadcrumb a {
     color: var(--text-secondary);
 }
@@ -21,9 +8,10 @@
 }
 
 .breadcrumb li:not(:first-child)::before {
+    display: inline-block; 
     content: "/";
-    padding-left: 12px;
-    padding-right: 12px;
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
     color: var(--color-neutral-300);
     font-weight: 700;
 }
@@ -34,7 +22,7 @@
     padding-bottom: 12px;
 }
 
-.product-menu-item.active {
+.product-menu-item.active a {
     color: var(--text-highlight);
 }
 
@@ -44,7 +32,47 @@
 
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     column-gap: 24px;
     row-gap: 48px;
 }
+
+.product-card {
+    display: block;
+}
+
+.product-card a:hover {
+    opacity: 0.7;
+    transition: .6s;
+}
+
+.pagination-prev,
+.pagination-next,
+.pagination-pages a,
+.pagination-pages span {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination-prev.disabled {
+    opacity: 0.4;
+    pointer-events: none;
+    cursor: default;
+}
+
+.pagination-prev :hover,
+.pagination-next :hover{
+    color: var(--color-primary-500);
+}
+
+.pagination-item a:hover {
+    background: var(--color-neutral-100);
+}
+
+.pagination-item.active a {
+    background: var(--color-primary-300);
+}
+
