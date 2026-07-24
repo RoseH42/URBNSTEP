@@ -37,10 +37,6 @@
     row-gap: 48px;
 }
 
-.product-card {
-    display: block;
-}
-
 .product-card a:hover {
     opacity: 0.7;
     transition: .6s;
@@ -57,14 +53,14 @@
     justify-content: center;
 }
 
-.pagination-prev.disabled {
+.pagination-prev.disabled a {
     opacity: 0.4;
     pointer-events: none;
     cursor: default;
 }
 
-.pagination-prev :hover,
-.pagination-next :hover{
+.pagination-prev a:hover,
+.pagination-next a:hover{
     color: var(--color-primary-500);
 }
 

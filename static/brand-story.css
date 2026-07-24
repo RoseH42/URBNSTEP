@@ -24,8 +24,8 @@
     border-radius: var(--radius-sm);
 }
 
-.brand-quote .headings-h5,
-.brand-intro .headings-h5 {
+.brand-quote .h5,
+.brand-intro .h5 {
     color: var(--color-primary-400);
 }
 

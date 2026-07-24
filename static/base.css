@@ -138,32 +138,32 @@ button {
     line-height: 1.2;
 }
 
-.headings-h1 {
+.h1 {
     font-size: 40px;
     line-height: 1.2;    
 }
 
-.headings-h2 {
+.h2 {
     font-size: 32px;
     line-height: 1.2;    
 }
 
-.headings-h3 {
+.h3 {
     font-size: 28px;
     line-height: 1.2;    
 }
 
-.headings-h4 {
+.h4 {
     font-size: 24px;
     line-height: 1.2;    
 }
 
-.headings-h5 {
+.h5 {
     font-size: 20px;
     line-height: 1.2;    
 }
 
-.headings-h6 {
+.h6 {
     font-size: 16px;
     line-height: 1.2;    
 }
@@ -242,6 +242,15 @@ button {
 
 
 /* Utility */
+
+
+.ml-4 {
+    margin-left: var(--spacing-xxs);
+}
+
+.mr-4 {
+    margin-right: var(--spacing-xxs);
+}
 
 .mr-8 {
     margin-right: var(--spacing-xs);
